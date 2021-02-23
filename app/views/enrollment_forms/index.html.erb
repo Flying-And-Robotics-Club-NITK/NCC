@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Enrollment Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Middle name</th>
+      <th>Last name</th>
+      <th>Branch</th>
+      <th>Reg no</th>
+      <th>Roll no</th>
+      <th>Semester</th>
+      <th>Blood group</th>
+      <th>Nationality</th>
+      <th>Dob</th>
+      <th>Address</th>
+      <th>State</th>
+      <th>Pincode</th>
+      <th>Parent name</th>
+      <th>Parent phone</th>
+      <th>Parent email</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Language</th>
+      <th>Highest education</th>
+      <th>Marks</th>
+      <th>Year of study</th>
+      <th>Achievement ncc</th>
+      <th>Achievement sport</th>
+      <th>Achievement art</th>
+      <th>Achievement other</th>
+      <th>Fill place</th>
+      <th>Fill date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enrollment_forms.each do |enrollment_form| %>
+      <tr>
+        <td><%= enrollment_form.middle_name %></td>
+        <td><%= enrollment_form.last_name %></td>
+        <td><%= enrollment_form.branch %></td>
+        <td><%= enrollment_form.reg_no %></td>
+        <td><%= enrollment_form.roll_no %></td>
+        <td><%= enrollment_form.semester %></td>
+        <td><%= enrollment_form.blood_group %></td>
+        <td><%= enrollment_form.nationality %></td>
+        <td><%= enrollment_form.dob %></td>
+        <td><%= enrollment_form.address %></td>
+        <td><%= enrollment_form.state %></td>
+        <td><%= enrollment_form.pincode %></td>
+        <td><%= enrollment_form.parent_name %></td>
+        <td><%= enrollment_form.parent_phone %></td>
+        <td><%= enrollment_form.parent_email %></td>
+        <td><%= enrollment_form.phone %></td>
+        <td><%= enrollment_form.email_id %></td>
+        <td><%= enrollment_form.language %></td>
+        <td><%= enrollment_form.highest_education %></td>
+        <td><%= enrollment_form.marks %></td>
+        <td><%= enrollment_form.year_of_study %></td>
+        <td><%= enrollment_form.achievement_ncc %></td>
+        <td><%= enrollment_form.achievement_sport %></td>
+        <td><%= enrollment_form.achievement_art %></td>
+        <td><%= enrollment_form.achievement_other %></td>
+        <td><%= enrollment_form.fill_place %></td>
+        <td><%= enrollment_form.fill_date %></td>
+        <td><%= link_to 'Show', enrollment_form %></td>
+        <td><%= link_to 'Edit', edit_enrollment_form_path(enrollment_form) %></td>
+        <td><%= link_to 'Destroy', enrollment_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enrollment Form', new_enrollment_form_path %>

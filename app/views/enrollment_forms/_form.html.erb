@@ -1,0 +1,152 @@
+<%= form_with(model: enrollment_form, local: true) do |form| %>
+  <% if enrollment_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(enrollment_form.errors.count, "error") %> prohibited this enrollment_form from being saved:</h2>
+
+      <ul>
+        <% enrollment_form.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :middle_name %>
+    <%= form.datetime_select :middle_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_area :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :branch %>
+    <%= form.number_field :branch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reg_no %>
+    <%= form.number_field :reg_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :roll_no %>
+    <%= form.text_field :roll_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :semester %>
+    <%= form.number_field :semester %>
+  </div>
+
+  <div class="field">
+    <%= form.label :blood_group %>
+    <%= form.text_field :blood_group %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nationality %>
+    <%= form.text_field :nationality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dob %>
+    <%= form.date_select :dob %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_area :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pincode %>
+    <%= form.number_field :pincode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parent_name %>
+    <%= form.text_field :parent_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parent_phone %>
+    <%= form.number_field :parent_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :parent_email %>
+    <%= form.text_field :parent_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.number_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email_id %>
+    <%= form.text_field :email_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language %>
+    <%= form.number_field :language %>
+  </div>
+
+  <div class="field">
+    <%= form.label :highest_education %>
+    <%= form.text_field :highest_education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marks %>
+    <%= form.text_field :marks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_of_study %>
+    <%= form.number_field :year_of_study %>
+  </div>
+
+  <div class="field">
+    <%= form.label :achievement_ncc %>
+    <%= form.text_area :achievement_ncc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :achievement_sport %>
+    <%= form.text_area :achievement_sport %>
+  </div>
+
+  <div class="field">
+    <%= form.label :achievement_art %>
+    <%= form.text_area :achievement_art %>
+  </div>
+
+  <div class="field">
+    <%= form.label :achievement_other %>
+    <%= form.text_area :achievement_other %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fill_place %>
+    <%= form.text_field :fill_place %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fill_date %>
+    <%= form.datetime_select :fill_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

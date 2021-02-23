@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @testimonial.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @testimonial.phone %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @testimonial.facebook %>
+</p>
+
+<p>
+  <strong>Linkedin:</strong>
+  <%= @testimonial.linkedin %>
+</p>
+
+<p>
+  <strong>Instagram:</strong>
+  <%= @testimonial.instagram %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @testimonial.email %>
+</p>
+
+<p>
+  <strong>Statement:</strong>
+  <%= @testimonial.statement %>
+</p>
+
+<%= link_to 'Edit', edit_testimonial_path(@testimonial) %> |
+<%= link_to 'Back', testimonials_path %>

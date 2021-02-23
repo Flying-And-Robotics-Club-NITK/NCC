@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :attendances
+  resources :events
+  resources :testimonials
+  resources :news
+  resources :enrollment_forms
   resources :posts
   # root to: 'pages#nccflag'
 

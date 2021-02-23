@@ -1,0 +1,2 @@
+class EnrollmentForm < ApplicationRecord
+end
